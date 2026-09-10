@@ -1,0 +1,13 @@
+# IT OPS Sprint Metrics & Review Automation — Python dependencies
+# Install:  pip3 install -r requirements.txt
+#
+# Python 3.9+ (macOS: use Homebrew Python or `uv`, NOT the system LibreSSL Python,
+# or TLS to Atlassian Cloud will fail).
+
+requests>=2.31      # Jira Cloud REST calls
+openpyxl>=3.1       # reading the workbook (data_only) for the deck reader
+python-pptx>=0.6.23 # writing the Sprint Review deck
+
+# NOT pip-installed (external tooling):
+#  - macOS: Microsoft Excel (chart export via AppleScript) — no install needed if you have Excel
+#  - Linux/sandbox only: LibreOffice (chart export fallback via UNO) — system package
