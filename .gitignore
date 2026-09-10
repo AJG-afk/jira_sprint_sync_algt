@@ -1,0 +1,37 @@
+cat > .gitignore << 'EOF'
+# ─── Secrets ────────────────────────────────────────────────────────────────
+.env
+*.token
+*_secret*
+credentials*.json
+
+# ─── Runtime data files ─────────────────────────────────────────────────────
+# IT OPS Teams Sprint Metrics*.xlsx
+# Sprint Review*.pptx
+*_backup_*.xlsx
+*_generated.pptx
+*GENERATED*.pptx
+
+# ─── Chart export / temp artifacts ──────────────────────────────────────────
+charts_*/
+deck_charts_*/
+*_uno_*.py
+_export.applescript
+export_charts.bas
+*.pdf
+*.jpg
+*.png
+
+# ─── LibreOffice / OS scratch ───────────────────────────────────────────────
+.~lock.*#
+/tmp/lo*/
+.DS_Store
+
+# ─── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+EOF
